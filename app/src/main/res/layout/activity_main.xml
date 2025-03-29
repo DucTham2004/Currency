@@ -8,12 +8,71 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/text_view_symbol_money_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="dong"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/text_view_symbol_money_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="160dp"
+        android:text="dong"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_text_money_amount_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_view_symbol_money_1"
+        app:layout_constraintStart_toEndOf="@+id/text_view_symbol_money_1"
+        app:layout_constraintTop_toTopOf="@+id/text_view_symbol_money_1" />
+
+    <Spinner
+        android:id="@+id/spinner_money_type_1"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        app:layout_constraintStart_toStartOf="@+id/text_view_symbol_money_1"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_money_amount_1" />
+
+    <EditText
+        android:id="@+id/edit_text_money_amount_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_view_symbol_money_2"
+        app:layout_constraintStart_toEndOf="@+id/text_view_symbol_money_2"
+        app:layout_constraintTop_toTopOf="@+id/text_view_symbol_money_2" />
+
+    <Spinner
+        android:id="@+id/spinner_money_type_2"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        app:layout_constraintStart_toStartOf="@+id/text_view_symbol_money_2"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_money_amount_2" />
+
+    <TextView
+        android:id="@+id/text_view_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1USD"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_money_type_2"
+        app:layout_constraintStart_toStartOf="@id/spinner_money_type_2"
+        android:textSize="18sp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
